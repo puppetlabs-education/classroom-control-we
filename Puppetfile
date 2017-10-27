@@ -1,6 +1,11 @@
-# Installs the acme/ohmyzsh module from the Puppet Forge
-mod 'acme/ohmyzsh', '0.1.2'
-
-# Installs the puppetlabs/vcsrepo module from its GitHub repository
-mod 'vcsrepo',
-  :git => 'https://github.com/puppetlabs/puppetlabs-vcsrepo'
+mod 'puppetlabs/stdlib'
+mod 'puppetlabs/powershell'
+mod 'puppetlabs/registry'
+mod 'puppetlabs/reboot'
+mod 'puppetlabs/acl'
+mod 'puppetlabs/chocolatey'
+mod 'puppetlabs/dism'
+mod 'trlinkin/domain_membership'
+mod 'puppet/windows_autoupdate'
+mod 'puppet/staging'
+mod 'puppet/windowsfeature'
