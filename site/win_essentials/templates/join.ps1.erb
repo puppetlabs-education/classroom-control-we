@@ -1,0 +1,7 @@
+# PS script to add a Computer to a Domain
+
+$domain     = "<%= @domain_name -%>"
+$password   = "<%= @ad_password -%>" | ConvertTo-SecureString -asPlainText -Force
+$username   = "<%= @ad_username -%>"
+$credential = New-Object System.Management.Automation.PSCredential($username,$password)
+Add-Computer -DomainName $domain -Credential $credential

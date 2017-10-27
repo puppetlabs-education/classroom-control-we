@@ -1,0 +1,42 @@
+{
+  "name": "pltraining-win_essentials",
+  "version": "0.0.12",
+  "author": "pltraining",
+  "summary": "Starter code for the Puppet Windows Essentials virtual class",
+  "license": "Apache 2.0",
+  "source": "https://learn.puppet.com/",
+  "project_page": "https://learn.puppet.com/",
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppet/windows_autoupdate","version_requirement":">= 1.0.1"},
+    {"name":"puppet/staging","version_requirement":">= 2.2.0"},
+    {"name":"puppet/windowsfeature","version_requirement":">= 2.0.0"},
+    {"name":"puppetlabs/acl","version_requirement":">= 1.1.2"},
+    {"name":"puppetlabs/dism","version_requirement":">= 1.1.0"},
+    {"name":"puppetlabs/powershell","version_requirement":">= 1.0.4"},
+    {"name":"puppetlabs/reboot","version_requirement":">= 0.1.9"},
+    {"name":"puppetlabs/registry","version_requirement":">= 1.0.3"},
+    {"name":"puppetlabs/chocolatey","version_requirement":">= 2.0.1"},
+    {"name":"trlinkin/domain_membership","version_requirement":">= 1.0.1"}
+  ],
+  "data_provider": null,
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Windows",
+      "operatingsystemrelease": [
+        "2012 R2"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "3.7.x"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "3.x"
+    }
+  ],
+  "description": "This is starter code only and has no useful functionality outside the classroom."
+}

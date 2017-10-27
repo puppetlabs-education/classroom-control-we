@@ -1,0 +1,9 @@
+ForEach ($Computer in Get-ADComputer -filter * )
+{
+    Write-Verbose "Processing $Computer"
+    $cmd  = "msg.exe * /Time:15"
+    $cmd += " /SERVER:$($Computer)"
+    $cmd += " <%= @message %>"
+
+    Invoke-Expression $cmd
+}
